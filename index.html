@@ -16,11 +16,24 @@
                 <label for="password">Create a New Password: <input id="password" required type="password" pattern="[a-z0-5]{8,}"/></label>
             </fieldset>
             <fieldset>
-
+                <legend>Account type (required)</legend>
+                <label for="personal-account"><input name="account-type" id="personal-account" type="radio" checked /> Personal Account</label>
+                <label for="bussines account"><input name="account-type" id="bussines account" type="radio" /> Bussines Account</label>
             </fieldset>
             <fieldset>
-
+                <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" /></label>
+                <label>Input your age (years): <input type="number" min="13" max="120" /> </label>
+                <label for="hear-about">How did you hear about us?
+                <select id="hear-about">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+                </label>
             </fieldset>
+            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox"/>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
         </form>
     </body>
 </html>
